@@ -168,6 +168,7 @@
   .hv2:hover{border-color:rgba(224,24,45,.5)}
   .hv3:hover{border-color:#e0182d;background:rgba(224,24,45,.06)}
   .hv4:hover{background:#ff2438;transform:translateY(-3px);box-shadow:0 18px 56px rgba(224,24,45,.46)}
+  .credit-link:hover{color:#c9c2b8}
   /* CVR改善: CTAの視線誘導パルス */
   @keyframes ctaPulse{0%,100%{box-shadow:0 10px 40px rgba(224,24,45,.3)}50%{box-shadow:0 14px 56px rgba(224,24,45,.62)}}
   .cta-pulse{animation:ctaPulse 2.6s ease-in-out infinite}
@@ -209,6 +210,11 @@
 </head>
 <body>
 <div style="position:relative;width:100%;background:#0a0908">
+
+  <!-- ============ クレジットバー ============ -->
+  <div style="position:relative;background:#050403;border-bottom:1px solid rgba(243,239,233,.08);padding:10px 20px;text-align:center">
+    <a href="https://claudecode.digirise.ai/" target="_blank" rel="noopener" class="credit-link" style="font-size:12px;letter-spacing:.04em;color:#8a827a;transition:color .2s">SEO施策参考: Claude Code法人導入支援 - 株式会社デジライズ</a>
+  </div>
 
   <!-- ============ INTRO SPLASH ============ -->
   <div id="fvIntro" aria-hidden="true" style="position:fixed;inset:0;z-index:9999;background:#0a0908;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,3vh,34px);padding:24px;pointer-events:none">
