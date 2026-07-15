@@ -22,9 +22,11 @@
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://gekokujo-intern-lp.vercel.app/#organization",
       "name": "株式会社TRIXIA",
       "url": "https://trixia-joseikin123.com/",
-      "logo": "https://gekokujo-intern-lp.vercel.app/logo.jpg",
+      "logo": { "@id": "https://gekokujo-intern-lp.vercel.app/#logo" },
+      "image": { "@id": "https://gekokujo-intern-lp.vercel.app/#logo" },
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "JP",
@@ -32,15 +34,36 @@
         "addressRegion": "北海道",
         "addressLocality": "札幌市中央区",
         "streetAddress": "大通東7丁目12-15 ノースシティアンザイ"
-      }
+      },
+      "founder": { "@id": "https://gekokujo-intern-lp.vercel.app/#founder" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://gekokujo-intern-lp.vercel.app/#logo",
+      "url": "https://gekokujo-intern-lp.vercel.app/logo.jpg",
+      "contentUrl": "https://gekokujo-intern-lp.vercel.app/logo.jpg",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gekokujo-intern-lp.vercel.app/#founder",
+      "name": "武田功平",
+      "jobTitle": "代表取締役",
+      "worksFor": { "@id": "https://gekokujo-intern-lp.vercel.app/#organization" }
     },
     {
       "@type": "WebSite",
+      "@id": "https://gekokujo-intern-lp.vercel.app/#website",
       "name": "下剋上インターン",
-      "url": "https://gekokujo-intern-lp.vercel.app/"
+      "url": "https://gekokujo-intern-lp.vercel.app/",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://gekokujo-intern-lp.vercel.app/#organization" }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://gekokujo-intern-lp.vercel.app/#faq",
+      "isPartOf": { "@id": "https://gekokujo-intern-lp.vercel.app/#website" },
       "mainEntity": [
         {
           "@type": "Question",
